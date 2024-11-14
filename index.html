@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Banner/Header -->
+    <header class="banner">
+        <div class="banner-content">
+            <h1>Vicente Falcó Pérez</h1>
+            <img src="c:\Users\user\Pictures\v.jpg" alt="Logo Personal" class="logo">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Aviso de cookies -->
+    <div class="cookies" id="cookieBanner">
+        Esta página usa cookies. <button onclick="closeCookieBanner()">Aceptar</button>
+    </div>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <div class="card">
+            <h2>Sobre Mí</h2>
+            <p>Informatico dedicado a la instalcion de software, hardwares y todo tipo de recursos para facilitar el trabajo diario.</p>
+            <div class="social-media">
+                <a href="#https://x.com/" class="social-icon">Twitter</a>
+                <a href="#https://www.instagram.com/" class="social-icon">Instagram</a>
+                <a href="#https://github.com/" class="social-icon">Github</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Proyectos -->
+    <section id="proyectos" class="projects">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <ul>
+                    <li> HTML: He aprendido a mmanejar html mediante visual studio code</li>
+                    <li> CSS: Una vez aprendido html tambien aprendi a usar css para poder darle estilo a todo</li>
+                    <li> Creacion de paginas web, tablas, portafolio.. mediante estas dos cosas</li>
+                </ul>
+            </div>
+            <!-- Repetir estructura del proyecto aquí con más proyectos -->
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades y Conocimientos -->
+    <section id="habilidades" class="skills">
+        <h2>Habilidades HTML</h2>
+        <ul>
+            <li>Sintaxis básica y semántica. Añade tu experiencia personal antes que nadie.</li>
+            <li>Diseño y capacidad de respuesta. ...</li>
+            <li>Formularios e insumos.</li>
+            <li>Medios y gráficos.</li>
+            <li>Accesibilidad y SEO.</li>
+            <li>Características nuevas y experimentales. .</li>
+        </ul>
+        <br>
+        <div class="skill">
+            
+            <div class="skill-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+            <p>Desarrollo de contenido estructurado y semántico.</p>
+        </div>
+        <!-- Repetir estructura de habilidad con otras tecnologías -->
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="contact">
+        <h2>¿Quieres contratarme? ¡Contactame!</h2>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <p>© 2024 Vicente Falcó Pérez</p>
+    </footer>
+
+    <script>
+        function closeCookieBanner() {
+            document.getElementById("cookieBanner").style.display = "none";
+        }
+        setTimeout(closeCookieBanner, 5000);
+    </script>
+</body>
+</html>

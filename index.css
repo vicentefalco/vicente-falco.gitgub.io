@@ -1,0 +1,179 @@
+/* Styles for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Banner/Header */
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color:black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color:black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Cookies Banner */
+.cookies {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* About Me Section */
+.about {
+    padding: 2em;
+    background: #f4f4f4;
+}
+
+.card {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-media {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.social-icon {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #0077b5;
+}
+
+/* Projects Section */
+.projects {
+    padding: 2em;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.project-card {
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Skills Section */
+.skills {
+    padding: 2em;
+    background: #f4f4f4;
+}
+
+.skill {
+    margin-bottom: 1.5em;
+}
+
+.skill-bar {
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 10px;
+    background: #0077b5;
+}
+
+/* Contact Form */
+.contact {
+    padding: 2em;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submit-btn {
+    padding: 10px;
+    background: #0077b5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #005c99;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+}
